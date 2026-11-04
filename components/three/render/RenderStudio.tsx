@@ -120,7 +120,7 @@ function EyesSet({ shot }: { shot: Shot }) {
   return (
     <>
       <color attach="background" args={["#020203"]} />
-      <Lighting mood="macro" intensity={0.8} />
+      <Lighting mood="macro" intensity={0.7} accent="#5d6a80" />
       <Product shot={shot} />
     </>
   );

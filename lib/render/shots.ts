@@ -56,8 +56,8 @@ export const SHOTS: Shot[] = [
     h: 1000,
     kind: "eyes",
     look: { preset: p, led: c },
-    cam: [0, 0.07, 0.46],
-    target: [0, 0.06, 0],
+    cam: [0, 0.07, 0.68],
+    target: [0, 0.055, 0],
     fov: 30,
   })),
   { id: "macro-16x9", file: "macro-16x9.jpg", w: 2400, h: 1350, kind: "macro", cam: [0.25, 0.115, 0.2], target: [0.12, 0.075, 0.055], fov: 24 },
@@ -69,7 +69,7 @@ export const SHOTS: Shot[] = [
   { id: "studio-profile", file: "studio-profile.jpg", w: 1500, h: 1500, kind: "studio", cam: [0, 0.05, 1.55], target: [0, 0.0, -0.06], fov: 30, rotY: Math.PI / 2 },
   { id: "studio-back", file: "studio-back.jpg", w: 1500, h: 1500, kind: "studio", cam: [0, 0.08, 1.55], target: [0, 0.0, -0.08], fov: 30, rotY: Math.PI + 0.35 },
   { id: "studio-eyes", file: "studio-eyes.jpg", w: 1500, h: 1500, kind: "studio", cam: [0.12, 0.09, 0.52], target: [0.0, 0.07, 0.03], fov: 30, rotY: 0.18 },
-  { id: "studio-finish", file: "studio-finish.jpg", w: 1500, h: 1500, kind: "macro", cam: [0.34, -0.02, 0.16], target: [0.15, -0.06, -0.01], fov: 26, look: { preset: "phantom", led: "violet" } },
+  { id: "studio-finish", file: "studio-finish.jpg", w: 1500, h: 1500, kind: "studio", cam: [0.5, 0.16, 0.2], target: [0.16, 0.04, -0.03], fov: 26, rotY: 0, look: { preset: "phantom", led: "violet" } },
   { id: "studio-worn", file: "studio-worn.jpg", w: 1500, h: 1500, kind: "worn", cam: [0.55, 1.32, 1.85], target: [0.11, 1.2, 0.31], fov: 32, rotY: 0.35 },
   ...variantPresets.flatMap(([shell, preset, led]): Shot[] =>
     (["on", "off"] as const).map((state) => ({
