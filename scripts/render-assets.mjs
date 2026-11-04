@@ -22,7 +22,10 @@ if (!ids.length) {
   await p.close();
 }
 console.log(`Rendering ${ids.length} shots`);
-for (const id of ids) {
+const queue = ids.map((id) => ({ id, tries: 0 }));
+while (queue.length) {
+  const job = queue.shift();
+  const id = job.id;
   const t0 = Date.now();
   // read size from the studio list page metadata via the page itself
   const page = await browser.newPage({ viewport: { width: 400, height: 400 } });
@@ -35,8 +38,9 @@ for (const id of ids) {
     return null;
   });
   if (!size) {
-    console.log(`✗ ${id} — no canvas`);
+    console.log(`✗ ${id} — no canvas${job.tries < 1 ? " (retrying later)" : ""}`);
     await page.close();
+    if (job.tries++ < 1) queue.push(job);
     continue;
   }
   await page.setViewportSize({ width: size.w, height: size.h });
