@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[59942,["/eyeshift/_next/static/chunks/da2c80cd8beb600e.js","/eyeshift/_next/static/chunks/bbea553105c122ff.js","/eyeshift/_next/static/chunks/084d2c8c537cabb0.js","/eyeshift/_next/static/chunks/c3f27b9dbc94ffa0.js"],"BackpackConfigurator"]
+3:I[97367,["/eyeshift/_next/static/chunks/ff1a16fafef87110.js","/eyeshift/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"59ZSZKVxkeMBFyoH_QOdJ","rsc":["$","$1","c",{"children":[["$","main",null,{"id":"main","children":["$","$L2",null,{}]}],[["$","script","script-0",{"src":"/eyeshift/_next/static/chunks/084d2c8c537cabb0.js","async":true}],["$","script","script-1",{"src":"/eyeshift/_next/static/chunks/c3f27b9dbc94ffa0.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null
